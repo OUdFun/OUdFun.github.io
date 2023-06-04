@@ -503,4 +503,13 @@ footer .logo-footer a {
     color: #ffd3d8;
 }
 
+.tools-text {
+    text-align: center;
+}
+
+.asset-link {
+    text-align: center;
+    color: #efebed;
+}
+
 /*# sourceMappingURL=base_v2.css.map */
