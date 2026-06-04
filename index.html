@@ -1,79 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- HTML Meta Tags -->
-    <title>dFun</title>
-    <meta name="description" content="Boost Tools"/>
-    <meta name="keywords" content="dFun"/>
-    <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="dFun="/>
-    <meta itemprop="description" content="Boost Tools"/>
-    <!-- Facebook Meta Tags -->
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="dFun"/>
-    <meta property="og:description" content="Boost Tools"/>
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="dFun"/>
-    <meta name="twitter:description" content="Boost Tools"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --logo-bg: #ffcccb;
-            --logo-outline: transparent;
-            --primary-bg: #000000;
-            --primary-text: #ffd7d6;
-            --button-main: #FF908B;
-            --button-text: #ED2647;
-            --button-icon: #ED2647;
-            --button-shadow: #000000;
-            --button-shadow-alpha: #000000cc;
-            --outline-button-main: transparent;
-            --outline-button-text: #FF908B;
-            --outline-button-icon: #FF908B;
-            --loader: #FF908B;
-            --font-family: Inter, san-serif;
-        }
-    </style>
-    <link href="./style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dFun — Tools &amp; Games</title>
+  <meta name="description" content="dFun Studio — cutting-edge Unity developer tools and indie games crafted for impact.">
+  <meta property="og:title" content="dFun — Tools &amp; Games">
+  <meta property="og:description" content="Cutting-edge Unity developer tools and indie games crafted for impact.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="dFun — Tools &amp; Games">
+  <meta name="twitter:description" content="Cutting-edge Unity developer tools and indie games crafted for impact.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
-<body data-logo-id="logo">
-<div class="site-wrapper">
-    <header class="header">
-        <img class="header-logo" src="./images/dfun-logo.png" alt="Logo">
-        <div class="header-text">
-            <h1 class="title">dFun</h1>
-            <p class="subtitle">Boost Tools</p>
-        </div>
-    </header>
-    <div>
-        <h3 class="description">Cutting-edge solutions to empower Unity developers, providing a seamless and efficient
-            workflow</h3>
-    </div>
+<body>
 
-    <div id="projects">
-        <h1 class="tools-text"> Tools </h1>
-        <br>
-        <a href="https://u3d.as/35Hf">
-            <img src="./images/easy-bookmarks-logo.png" alt="Logo">
-        </a>
-        <br><br>
-        <h3 class="description">How much time do you spend navigating complex Project or Hierarchy structures? This solution significantly speeds up and simplifies the dev process with easy to use bookmarks system</h3>
-        <a class="asset-link" href="https://u3d.as/35Hf">
-            <h4>[Redeem from Unity Asset Store]</h4>
-        </a>
-    </div>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="./" class="nav-logo">
+      <img src="./images/dfun-logo.png" alt="">
+      dFun
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#games">Games</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-    <footer class="footer">
-        <div class="logo-footer-2">
-            <h4 class="contact-text">Contact us at ou.dfun[at]gmail.com</h4>
+<section class="hero">
+  <div class="container">
+    <span class="hero-eyebrow">dFun Studio</span>
+    <h1>Building <em>Tools &amp; Games</em><br>for Developers</h1>
+    <p>Cutting-edge Unity editor tools and indie games crafted to boost your productivity and spark your curiosity.</p>
+    <div class="hero-actions">
+      <a href="#tools" class="btn btn-primary">Explore Tools</a>
+      <a href="#games" class="btn btn-outline">View Games</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="games" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Games</h2>
+      <a href="./games/" class="view-all">View all →</a>
+    </div>
+    <div class="card-grid">
+
+      <div class="card">
+        <div class="card-thumb card-thumb-game">
+          <img class="card-thumb-logo" src="./images/dfun-logo.png" alt="Tap On Us">
         </div>
-    </footer>
-</div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag-android">Android</span>
+            <span class="tag tag-green">Free</span>
+          </div>
+          <h3 class="card-name">Tap On Us</h3>
+          <p class="card-desc">A fast-paced tap game with intuitive controls and endless fun. Free to play on Android.</p>
+          <div class="card-footer">
+            <a href="https://play.google.com/store/apps/details?id=com.cm.tou&utm_source=dfun_website&utm_medium=referral&utm_campaign=tap_on_us&utm_content=games_card" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Google Play →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card coming-soon">
+        <div class="card-thumb card-thumb-placeholder"></div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag-soon">Coming Soon</span>
+          </div>
+          <h3 class="card-name">New Game</h3>
+          <p class="card-desc">Something new is in the works. Stay tuned for the announcement.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="tools" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Tools</h2>
+      <a href="./tools/" class="view-all">View all →</a>
+    </div>
+    <div class="card-grid">
+
+      <div class="card">
+        <div class="card-thumb card-thumb-tool">
+          <img class="card-thumb-logo" src="./images/easy-bookmarks-logo.png" alt="Easy Bookmarks">
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag-unity">Unity</span>
+            <span class="tag tag-green">Available</span>
+          </div>
+          <h3 class="card-name">Easy Bookmarks</h3>
+          <p class="card-desc">Speed up your Unity editor workflow with a smart bookmarks system for project and hierarchy navigation.</p>
+          <div class="card-footer">
+            <a href="https://u3d.as/35Hf?utm_source=dfun_website&utm_medium=referral&utm_campaign=easy_bookmarks&utm_content=tools_card" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Asset Store →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card coming-soon">
+        <div class="card-thumb card-thumb-placeholder"></div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag-soon">Coming Soon</span>
+          </div>
+          <h3 class="card-name">New Tool</h3>
+          <p class="card-desc">More Unity tools are in development. Stay tuned.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="contact" class="section">
+  <div class="container">
+    <div class="contact-card">
+      <h2>Get in Touch</h2>
+      <p>Have a question, feedback, or a collaboration idea? We'd love to hear from you.</p>
+      <a href="mailto:ou.dfun@gmail.com" class="btn btn-primary">ou.dfun@gmail.com</a>
+      <div class="social-links">
+        <a href="https://discord.gg/N7PqtHKwC4" class="btn btn-outline" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/>
+          </svg>
+          Discord
+        </a>
+        <a href="https://assetstore.unity.com/publishers/86438?utm_source=dfun_website&utm_medium=referral&utm_campaign=publisher_profile&utm_content=contact" class="btn btn-outline" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+          Unity Asset Store
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-copy">© 2026 dFun Studio</span>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.getElementById('nav-links');
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+  links.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      links.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+
 </body>
 </html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tools — dFun</title>
+  <meta name="description" content="Unity editor tools by dFun Studio — extensions that supercharge your development workflow.">
+  <meta property="og:title" content="Tools — dFun">
+  <meta property="og:description" content="Unity editor tools by dFun Studio.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../" class="nav-logo">
+      <img src="../images/dfun-logo.png" alt="">
+      dFun
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../#games">Games</a></li>
+      <li><a href="../#tools">Tools</a></li>
+      <li><a href="../#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="page-hero">
+    <div class="container">
+      <a href="../" class="page-hero-back">← Back to Home</a>
+      <h1>Tools</h1>
+      <p>Unity editor extensions to supercharge your development workflow.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="products-list">
+
+      <!-- Easy Bookmarks -->
+      <article class="product-detail">
+        <div class="product-visual">
+          <img src="../images/easy-bookmarks-logo.png" alt="Easy Bookmarks icon">
+        </div>
+        <div class="product-info">
+          <div class="card-tags">
+            <span class="tag tag-unity">Unity</span>
+            <span class="tag tag-green">Available</span>
+          </div>
+          <h2 class="product-name">Easy Bookmarks</h2>
+          <p class="product-desc">
+            How much time do you spend navigating complex Project or Hierarchy structures?
+            Easy Bookmarks significantly speeds up your dev process with a lightweight
+            bookmarks system built directly into the Unity Editor — no friction, no overhead.
+          </p>
+          <ul class="features">
+            <li>Bookmark any project asset or scene object in one click</li>
+            <li>Instant navigation with keyboard shortcuts</li>
+            <li>Organize bookmarks into named groups</li>
+            <li>Works with both the Project window and Hierarchy</li>
+            <li>Zero impact on build size — editor-only extension</li>
+            <li>Clean, native Unity Editor UI</li>
+          </ul>
+          <div class="product-actions">
+            <a href="https://u3d.as/35Hf?utm_source=dfun_website&utm_medium=referral&utm_campaign=easy_bookmarks&utm_content=tools_page" class="btn btn-primary" target="_blank" rel="noopener">Get on Unity Asset Store</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Coming Soon -->
+      <article class="product-detail coming-soon">
+        <div class="product-visual product-visual-placeholder">· · ·</div>
+        <div class="product-info">
+          <div class="card-tags">
+            <span class="tag tag-soon">Coming Soon</span>
+          </div>
+          <h2 class="product-name">New Tool</h2>
+          <p class="product-desc">More Unity editor extensions are in development. Follow us on Discord to be notified when they launch.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-copy">© 2026 dFun Studio</span>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="../">Home</a>
+      <a href="../PrivacyPolicy/TapOnUs/">Privacy Policy</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.getElementById('nav-links');
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>

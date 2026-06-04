@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games — dFun</title>
+  <meta name="description" content="Indie games by dFun Studio — free-to-play mobile titles crafted for fun and accessibility.">
+  <meta property="og:title" content="Games — dFun">
+  <meta property="og:description" content="Indie games by dFun Studio.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../" class="nav-logo">
+      <img src="../images/dfun-logo.png" alt="">
+      dFun
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../#games">Games</a></li>
+      <li><a href="../#tools">Tools</a></li>
+      <li><a href="../#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <div class="page-hero">
+    <div class="container">
+      <a href="../" class="page-hero-back">← Back to Home</a>
+      <h1>Games</h1>
+      <p>Indie games crafted for fun and accessibility.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="products-list">
+
+      <!-- Tap On Us -->
+      <article class="product-detail">
+        <div class="product-visual">
+          <img src="../images/dfun-logo.png" alt="Tap On Us icon">
+        </div>
+        <div class="product-info">
+          <div class="card-tags">
+            <span class="tag tag-android">Android</span>
+            <span class="tag tag-green">Free</span>
+          </div>
+          <h2 class="product-name">Tap On Us</h2>
+          <p class="product-desc">
+            A fast-paced tap game built for mobile. Simple, intuitive controls — pick it up and play instantly.
+            Designed to be approachable for all ages while still offering a satisfying challenge as you go further.
+          </p>
+          <ul class="features">
+            <li>Tap-based controls — no learning curve</li>
+            <li>Free to play on Android</li>
+            <li>Google Play Services integration</li>
+            <li>Suitable for all ages</li>
+          </ul>
+          <div class="product-actions">
+            <a href="https://play.google.com/store/apps/details?id=com.cm.tou&utm_source=dfun_website&utm_medium=referral&utm_campaign=tap_on_us&utm_content=games_page" class="btn btn-primary" target="_blank" rel="noopener">Download on Google Play</a>
+            <a href="../PrivacyPolicy/TapOnUs/" class="btn btn-ghost">Privacy Policy →</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Coming Soon 1 -->
+      <article class="product-detail coming-soon">
+        <div class="product-visual product-visual-placeholder">· · ·</div>
+        <div class="product-info">
+          <div class="card-tags">
+            <span class="tag tag-soon">Coming Soon</span>
+          </div>
+          <h2 class="product-name">Untitled Game</h2>
+          <p class="product-desc">A new title is in development. Details will be announced soon — follow us on Discord to be the first to know.</p>
+        </div>
+      </article>
+
+      <!-- Coming Soon 2 -->
+      <article class="product-detail coming-soon">
+        <div class="product-visual product-visual-placeholder">· · ·</div>
+        <div class="product-info">
+          <div class="card-tags">
+            <span class="tag tag-soon">Coming Soon</span>
+          </div>
+          <h2 class="product-name">Untitled Game</h2>
+          <p class="product-desc">More titles are in the pipeline. Stay tuned.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-copy">© 2026 dFun Studio</span>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="../">Home</a>
+      <a href="../PrivacyPolicy/TapOnUs/">Privacy Policy</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.getElementById('nav-links');
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>
