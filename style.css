@@ -457,6 +457,12 @@ ul { list-style: none; }
   background: rgba(68, 221, 136, 0.08);
 }
 
+.tag-vr {
+  color: #66ccff;
+  border-color: rgba(102, 204, 255, 0.3);
+  background: rgba(102, 204, 255, 0.08);
+}
+
 .tag-soon {
   color: var(--text-3);
   border-color: var(--border);
